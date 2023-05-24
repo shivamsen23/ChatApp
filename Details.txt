@@ -1,0 +1,14 @@
+This is my first MERN stack project. It's a chat application where users can register, chat with friends, and create group chats. The front-end is built with React.js and I used React-Bootstrap, React-Router-DOM, and React-Router-Components to create the UI. For the back-end, I used several libraries such as Mongoose Schema for user authentication and database management, useState for managing changing values in each state, and authentication login.
+During signing here we have used  cloud storage service called Cloudinary using the fetch API and to uploads an image file to a storage
+
+To maintain the database, I used Mongoose Atlas. To fetch data from the backend, I used createApi and fetchBaseQuery functions provided by Redux Toolkit's query API, which made it easy to configure and create APIs for making asynchronous data requests from the server and making  API endpoint for each functioning such as login chat , logout .
+
+After a user logs in, I used sockets for chatting between different users and creating groups, with a message schema defining all message properties. On the back-end, I defined multiple io connections, such as emitting a user's details to all users when they log in and retrieving all messages up to date in sorted order whenever a user selects a room. When a user sends a message, a message is created from the message schema and then emitted to that room with notifications. When a user logs out, their status is changed to offline.
+
+
+React  is running on port no. 3000
+And backend server is running on port no. 5001
+
+
+And we have used UseNavigate() library from react-router-dom to navigate to different page in ui
+When a user navigates to a new URL that matches a specific route, React will only render the component associated with that route, and all other components will be unmounted from the DOM. This allows React to provide a fast and responsive user experience, as only the necessary content is loaded and rendered on the page.
